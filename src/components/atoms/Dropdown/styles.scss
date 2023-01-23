@@ -1,0 +1,9 @@
+.drop-down {
+  .action-block-card {
+    border-radius: 0 !important;
+    padding-top: 0 !important;
+    .right-content {
+      transform: rotate(90deg);
+    }
+  }
+}

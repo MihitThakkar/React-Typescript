@@ -1,0 +1,32 @@
+.theme-btn {
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 0.5px;
+  &.rounded {
+    border-radius: 20px;
+  }
+  &.text-right {
+    text-align: right;
+  }
+  &.variant-outline {
+    border: 1px solid var(--theme);
+    background: transparent;
+    color: var(--theme);
+  }
+  &.variant-no-outline {
+    background: transparent;
+    border: none;
+    color: var(--theme);
+  }
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+    color: var(--white);
+    background: var(--disabled-color);
+    &.variant-outline {
+      border-color: var(--border-color) !important;
+      color: var(--dark-gray) !important;
+    }
+  }
+}

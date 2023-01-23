@@ -1,0 +1,20 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  border-radius: 24px 24px 0 0;
+  &.double-button {
+    button {
+      width: 47%;
+      padding: 15px;
+    }
+  }
+  &.double-button {
+    button {
+      width: 47%;
+      padding: 15px;
+    }
+  }
+}

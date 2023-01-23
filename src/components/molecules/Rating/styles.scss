@@ -1,0 +1,15 @@
+.rating {
+  border: 1px solid var(--theme) !important;
+  padding-bottom: 10px;
+  div[role="button"] {
+    margin: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100% !important;
+    // border: 1px solid var(--theme-primary) !important;
+    svg {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+}

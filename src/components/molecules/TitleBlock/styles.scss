@@ -1,0 +1,13 @@
+.check-mark {
+	height: 3vw;
+	width: 3vw;
+	border-radius: 100%;
+	padding: 8px;
+	p {
+		font-family: arial;
+		-ms-transform: scaleX(-1) rotate(-35deg); /* IE 9 */
+		-webkit-transform: scaleX(-1) rotate(-35deg); /* Chrome, Safari, Opera */
+		transform: scaleX(-1) rotate(-35deg);
+		font-weight: 900;
+	}
+}

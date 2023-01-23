@@ -1,0 +1,9 @@
+.dropdown-modal {
+  .dropdown-list {
+    max-height: 35vh;
+    overflow: scroll;
+  }
+  p {
+    transition: all 0.1s linear;
+  }
+}

@@ -1,0 +1,127 @@
+.header {
+  background: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  &.box-shadow {
+    border-bottom: 0.5px solid var(--border-color);
+  }
+  canvas {
+    height: 100vh;
+    width: 100vw;
+  }
+  &.has-outer-block {
+    border-bottom-right-radius: 24px;
+  }
+  .page-heading {
+    img {
+      &.back-img {
+        width: 25px;
+        height: 25px;
+        padding-right: 15px;
+      }
+    }
+    & > div {
+      color: var(--dark);
+      width: 90%;
+    }
+  }
+  .logo-img {
+    transition: all 0.1s linear;
+    max-width: 40%;
+  }
+  .hamburger-img {
+    transition: all 0.1s ease-out;
+    width: 6%;
+  }
+  .user-details {
+    margin-top: 15px;
+    .green-parent {
+      width: 20px;
+      margin-top: 3px;
+      .green-block {
+        width: 12px;
+        height: 12px;
+        background-color: var(--transparent-active-green);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inner-green-block {
+          width: 6px;
+          height: 6px;
+          background-color: var(--active-green);
+          border-radius: 100%;
+        }
+      }
+    }
+    .details {
+      margin-left: 15px;
+      width: 100%;
+      .top-user-info {
+        &.half-width {
+          width: 56%;
+        }
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.33;
+        color: var(--dark);
+        &:first-child {
+          margin-bottom: 5px;
+        }
+        span {
+          &.name {
+            color: var(--turquoise);
+          }
+          &.rupee {
+            font-size: 0.625rem;
+          }
+          &.amount {
+          }
+        }
+      }
+      button {
+        width: 130px;
+        animation-duration: 1.5s;
+      }
+      &.active-edi {
+        & > div {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .outer-black-card {
+    padding: 0;
+    margin: 20px 0 -80px;
+    img {
+      width: 100%;
+      margin-bottom: -6px;
+    }
+  }
+  .three-dots {
+    margin-bottom: 5px;
+    max-width: 15%;
+    min-width: 10%;
+    width: 10%;
+  }
+  .logo-header {
+    margin-top: -10px;
+    div[role="button"] {
+      margin: 0 0 -7% -3px !important;
+      width: 15% !important;
+      svg {
+        height: 20% !important;
+      }
+    }
+  }
+  .account-switch {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}

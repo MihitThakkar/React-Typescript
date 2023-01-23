@@ -1,0 +1,28 @@
+.language-support {
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  background-color: var(--white);
+  transition: all 0.5s ease;
+  &.h-100 {
+    padding-bottom: 120px;
+    height: 100vh;
+    overflow: scroll;
+    .header {
+      display: block;
+    }
+    .footer {
+      display: block;
+    }
+  }
+  &.h-0 {
+    height: 0vh;
+    overflow: hidden;
+    .header {
+      display: none;
+    }
+    .footer {
+      display: none;
+    }
+  }
+}

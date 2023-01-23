@@ -1,0 +1,77 @@
+.loader-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  background: #34343482;
+  backdrop-filter: blur(1px);
+  .loader {
+    animation: rotate 1s infinite;
+    height: 100px;
+    width: 100px;
+  }
+
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;
+    background-color: var(--blue-theme);
+    box-shadow: 70px 0 0 var(--theme);
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite;
+    background-color: var(--theme);
+    box-shadow: 70px 0 0 var(--blue-theme);
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) scale(0.8);
+    }
+    50% {
+      transform: rotate(360deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(720deg) scale(0.8);
+    }
+  }
+
+  @keyframes ball1 {
+    0% {
+      box-shadow: 70px 0 0 var(--theme);
+    }
+    50% {
+      box-shadow: 0 0 0 var(--theme);
+      margin-bottom: 0;
+      transform: translate(35px, 35px);
+    }
+    100% {
+      box-shadow: 70px 0 0 var(--theme);
+      margin-bottom: 10px;
+    }
+  }
+
+  @keyframes ball2 {
+    0% {
+      box-shadow: 70px 0 0 var(--blue-theme);
+    }
+    50% {
+      box-shadow: 0 0 0 var(--blue-theme);
+      margin-top: -40px;
+      transform: translate(35px, 35px);
+    }
+    100% {
+      box-shadow: 70px 0 0 var(--blue-theme);
+      margin-top: 0;
+    }
+  }
+}

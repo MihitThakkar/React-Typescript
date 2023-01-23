@@ -1,0 +1,33 @@
+.input-container {
+  position: relative;
+  input {
+    outline: none;
+    letter-spacing: 1px;
+    cursor: text;
+    line-height: 1.71;
+    background: transparent;
+    &:focus,
+    &:not([value=""]) {
+      border-color: var(--theme);
+      & ~ .input-label {
+        top: -15px;
+        font-size: 0.875rem;
+      }
+    }
+    &.input__element--invalid {
+      border-color: var(--red);
+    }
+    &::placeholder {
+      color: var(--disabled-color);
+      font-size: 1rem;
+      font-family: "medium-font";
+    }
+  }
+  .input-label {
+    position: absolute;
+    top: 20%;
+    transition: all 0.25s ease-in-out;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+}

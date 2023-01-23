@@ -1,0 +1,21 @@
+.switch {
+  transition: all 0.5s linear;
+  width: 50px;
+  height: 20px;
+  border-radius: 45px;
+  div {
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    &.not-active {
+      left: 3px;
+    }
+    &.active {
+      left: 32px;
+    }
+  }
+}

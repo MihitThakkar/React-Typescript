@@ -1,0 +1,18 @@
+.rupee-icon {
+	font-family: Arial, Helvetica, sans-serif !important;
+	&.font-light {
+		font-weight: 100;
+	}
+	&.font-regular {
+		font-weight: 300 !important;
+	}
+	&.font-medium {
+		font-weight: 600;
+	}
+	&.font-heavy {
+		font-weight: 700;
+	}
+	&.font-extra-heavy {
+		font-weight: 900;
+	}
+}

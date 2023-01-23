@@ -1,0 +1,60 @@
+.main-screen {
+  &.menu-opened {
+    transform: translate(-94%, 5%);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 90%;
+    box-shadow: 0px 2px 25px var(--shadow-color);
+    // filter: blur(2px);
+  }
+  .screen-children {
+    padding-bottom: 100px;
+
+    &.has-header {
+      padding-top: 80px;
+    }
+  }
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  .Toastify__toast {
+    font-family: "medium-font";
+    &--success {
+      background: var(--light-green);
+      color: var(--green);
+    }
+    &--error {
+      background: var(--light-red);
+      color: var(--red);
+    }
+  }
+}
+
+.screen-replica {
+  &-children {
+    border-radius: 12px;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    transform: translate(-200%, 0%);
+    transition: all 0.5s ease-in-out;
+  }
+  &-1 {
+    height: 85%;
+    width: 100%;
+    background: #ffcd1e69;
+    transform: translate(-90%, 8%);
+  }
+  &-2 {
+    height: 80%;
+    width: 100%;
+    background: #ffcd1e4a;
+    transform: translate(-88%, 12%);
+  }
+  &-3 {
+    height: 75%;
+    width: 100%;
+    background: #ffcd1e29;
+    transform: translate(-86%, 16%);
+  }
+}

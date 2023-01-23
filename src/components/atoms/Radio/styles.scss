@@ -1,0 +1,67 @@
+// radio button
+$md-radio-checked-color: var(--theme);
+$md-radio-border-color: rgba(0, 0, 0, 0.54);
+$md-radio-checked-size: 10px;
+$md-radio-ripple-size: 15px;
+.radio-tooltip {
+  .tooltip-text {
+    white-space: nowrap;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -110%);
+    font-size: 90% !important;
+  }
+}
+.md-radio {
+  // margin: 16px 0;
+  border-radius: 6px;
+  padding: 10px;
+  &.md-radio-inline {
+    display: inline-block;
+  }
+
+  input[type="radio"] {
+    display: none;
+    &:checked + label:before {
+      border-color: $md-radio-checked-color;
+      animation: ripple 0.2s linear forwards;
+    }
+    &:checked + label:after {
+      transform: scale(1);
+    }
+  }
+
+  label {
+    display: inline-block;
+    // min-height: 10vw;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+    width: max-content;
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      transition-property: transform, border-color;
+    }
+    &:before {
+      left: 0;
+      top: 2px;
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid $md-radio-border-color;
+    }
+    &:after {
+      top: 8px;
+      left: 6px;
+      width: 10px;
+      height: 10px;
+      transform: scale(0);
+      background: $md-radio-checked-color;
+    }
+  }
+}

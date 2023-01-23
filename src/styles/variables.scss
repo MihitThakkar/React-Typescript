@@ -1,0 +1,43 @@
+@charset "UTF-8";
+:root {
+  --theme: #ff5700;
+  --light-theme: #fffae8;
+  --red: #e20613;
+  --light-red: #ffedee;
+  --green: #34a853;
+  --light-green: #f1f9f3;
+  --disabled-color: #959595;
+  --light-gray: #e5e5e5;
+  --dark-gray: #aaa;
+  --platinum: #e1e6ec;
+  --titanium: #4c5356;
+  --dark: #2a3238;
+  --success: #34a853;
+  --pending: #f29100;
+  --failed: #ea5045;
+  --secondary-deep: #1d1d1b;
+}
+
+[data-theme="light"] {
+  --black: #000000;
+  --white: #ffffff;
+  --off-white: #fcfcfc;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --border-color: #eeeeee;
+  --light-black: #4f4f4f;
+  --gray: #eeeeee;
+  --skeleton-white: #dce0e5;
+  --skeleton-shine: #f0f2f4;
+}
+
+[data-theme="dark"] {
+  --black: #ffffff;
+  --white: #000000;
+  --off-white: #101012;
+  --shadow-color: rgb(152 149 149 / 18%);
+  --border-color: #292929;
+  --light-black: #292929;
+  --gray: #4f4f4f;
+  --skeleton-white: #2d2d2e;
+  --skeleton-shine: #171818;
+}

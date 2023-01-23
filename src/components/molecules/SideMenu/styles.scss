@@ -1,0 +1,26 @@
+.side-menu {
+  background: var(--white);
+  position: fixed;
+  border-radius: 20px 0 0 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  padding: 20px;
+  // box-shadow: 10px 0px 60px 1px var(--shadow-color);
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  transform: translate(100%, 0%);
+  .header {
+    background: var(--white);
+    // padding: 0;
+  }
+  &-opened {
+    transform: translate(0%, 0%);
+  }
+  &-options {
+    overflow: scroll;
+    height: 80%;
+  }
+}

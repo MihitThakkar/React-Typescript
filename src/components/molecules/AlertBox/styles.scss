@@ -1,0 +1,10 @@
+.alert-box {
+  &.transparent-alert {
+    background: transparent !important;
+    border: none !important;
+  }
+  .status-icon {
+    height: 25px;
+    width: 25px;
+  }
+}
