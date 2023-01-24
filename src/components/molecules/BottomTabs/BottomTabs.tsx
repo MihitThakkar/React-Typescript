@@ -36,7 +36,7 @@ const BottomTabs: React.FC<BottomTabsProps> = ({
           alt="img"
           loading="lazy"
           src={HomeImg}
-          className="w-15 clicking-animation"
+          className="bottom-tabs-img clicking-animation"
         />
       </FlexBox>
       <FlexBox
@@ -69,7 +69,7 @@ const BottomTabs: React.FC<BottomTabsProps> = ({
           alt="img"
           loading="lazy"
           src={ProfileImg}
-          className="w-15 clicking-animation"
+          className="bottom-tabs-img clicking-animation"
         />
       </FlexBox>
     </FlexBox>

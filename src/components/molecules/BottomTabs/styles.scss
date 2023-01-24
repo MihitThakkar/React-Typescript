@@ -5,6 +5,9 @@
   right: 0;
   height: 60px;
   z-index: 12;
+  &-img {
+    width: 25px;
+  }
   .fadeInUp {
     animation-duration: 0.3s !important;
   }
@@ -82,9 +85,11 @@
     left: 0;
     right: 0;
     width: 100%;
+    height: 130%;
     top: 0;
     bottom: 0;
-    filter: drop-shadow(20px 10px 100px rgba(0, 0, 0, 0.18)) drop-shadow(-0.5px -0.5px 0 rgba(0, 0, 0, 0.18));
+    filter: drop-shadow(20px 10px 100px rgba(0, 0, 0, 0.18))
+      drop-shadow(-0.5px -0.5px 0 rgba(0, 0, 0, 0.18));
   }
   &.bg-black {
     background: #000 !important;
