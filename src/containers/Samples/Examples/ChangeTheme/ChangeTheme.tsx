@@ -7,9 +7,13 @@ import { ActionBlock, TranslatedString, Switch, TitleBlock } from "components";
 import "./styles.scss";
 //Assets
 import MobileImg from "assets/icons/mobile.svg";
+import { setGeneralDetails, useGeneralDetails } from "Slices";
 
 const ChangeThemeExample = () => {
   const [activeSwitch, setActiveSwitch] = useState(false);
+
+  //Slices
+  const generalDetails = useGeneralDetails();
 
   return (
     <TitleBlock
@@ -28,6 +32,7 @@ const ChangeThemeExample = () => {
                 localStorage.setItem("theme", theme);
                 setActiveSwitch(localStorage.getItem("theme") === "dark");
                 document.body.setAttribute("data-theme", theme);
+                setGeneralDetails({ theme });
               }}
             />
           }

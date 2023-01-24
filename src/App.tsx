@@ -24,6 +24,9 @@ const App: React.FC = () => {
 
   //UseEffect
   useEffect(() => {
+    const theme = localStorage.getItem("theme") === "dark" ? "light" : "dark";
+    document.body.setAttribute("data-theme", theme);
+    setGeneralDetails({ theme });
     if (document.addEventListener)
       document.addEventListener("visibilitychange", visibilityChanged);
   }, []);

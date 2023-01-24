@@ -15,7 +15,7 @@ import { ChangeHistory } from "utils";
 //Styles
 import "./styles.scss";
 import { HeaderProps } from "./types";
-import { setGeneralDetails } from "Slices";
+import { setGeneralDetails, useGeneralDetails } from "Slices";
 const Header: React.FC<HeaderProps> = ({
   className,
   pageName,
@@ -28,6 +28,9 @@ const Header: React.FC<HeaderProps> = ({
   hasSideMenu,
   hideBackButton,
 }) => {
+  //Slices
+  const generalDetails = useGeneralDetails();
+
   const goBack = () => {
     if (customBackAction) {
       customBackAction();
@@ -67,7 +70,7 @@ const Header: React.FC<HeaderProps> = ({
               className="clicking-animation back-img"
               onClick={() => goBack()}
               src={
-                localStorage.getItem("theme") === "dark"
+                generalDetails.theme === "dark"
                   ? BackButtonLight
                   : BackButtonDark
               }
