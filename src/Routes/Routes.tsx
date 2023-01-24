@@ -1,7 +1,7 @@
 //React
 import React, { Suspense } from "react";
 import { Provider } from "react-redux";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 //store
 import store from "store";
 import ROUTE_PATH from "./paths";
@@ -16,11 +16,12 @@ import {
   DetailedFaq,
 } from "containers";
 import { Loader } from "components";
+import { history } from "utils";
 //Routes
 const Routes: React.FC = () => (
   <Provider store={store}>
     <Suspense fallback={<Loader isLoading={true} />}>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router history={history}>
         <Switch>
           {/* Sample */}
           <Route path={ROUTE_PATH.SAMPLES.LANDING} exact component={Landing} />
