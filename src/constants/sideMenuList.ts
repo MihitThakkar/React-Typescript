@@ -31,25 +31,10 @@ const sideMenuList = [
     onClick: ROUTE_PATH.GENERAL.FAQ,
   },
   {
-    img: BlackHelp,
-    text: globalConstant.UNITY_MAIL_ID,
-    onClick: SIDE_MENU_CUSTOM_ACTIONS.EMAIL,
-  },
-  {
-    img: BlackStar,
-    text: "Rate us",
-    onClick: SIDE_MENU_CUSTOM_ACTIONS.RATE,
-  },
-  {
     img: BlackTnc,
     text: "Terms and Conditions",
     onClick: ROUTE_PATH.GENERAL.TNC,
   },
-  // {
-  //   img: BlackInfo,
-  //   text: "Checkout Components",
-  //   onClick: ROUTE_PATH.SAMPLES.ACTIONS,
-  // },
   {
     img: Logout,
     text: "Logout",

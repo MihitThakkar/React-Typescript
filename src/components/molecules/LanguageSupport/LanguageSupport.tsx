@@ -1,4 +1,4 @@
-import BlueTick from "assets/icons/blue-success.svg";
+import BlueTick from "assets/icons/theme-success.svg";
 import cx from "classnames";
 import { Card, FlexBox, Footer, Header } from "components";
 import { languages } from "constants/langConstant";
@@ -10,7 +10,7 @@ const LanguageSupport: React.FC<LanguageSupportProps> = ({
   visible,
   onClose,
 }) => {
-  const [lang, setActiveLang] = useContext(LanguageContext);
+  const [lang, setActiveLang]: any = useContext(LanguageContext);
 
   return (
     <div className={cx(visible ? "h-100 " : "h-0", "language-support")}>

@@ -56,8 +56,8 @@ $md-radio-ripple-size: 15px;
       border: 2px solid $md-radio-border-color;
     }
     &:after {
-      top: 8px;
-      left: 6px;
+      top: 0.8vh;
+      left: 0.6vh;
       width: 10px;
       height: 10px;
       transform: scale(0);

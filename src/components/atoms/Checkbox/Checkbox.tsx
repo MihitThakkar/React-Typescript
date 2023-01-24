@@ -1,4 +1,4 @@
-import BlueSuccess from "assets/icons/blue-success.svg";
+import BlueSuccess from "assets/icons/theme-success.svg";
 import DisabledSuccess from "assets/icons/disabled-success.svg";
 import cx from "classnames";
 import { FlexBox } from "components";

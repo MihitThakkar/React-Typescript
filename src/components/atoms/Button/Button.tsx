@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
     disabled={disabled}
     className={cx(
       className,
-      "theme-btn clr-white clicking-animation br-9 clr-black bg-dark-theme font-extra-heavy pd-15",
+      "theme-btn clicking-animation br-9 bg-dark-theme font-extra-heavy pd-15",
       rounded && "rounded",
       variant && `variant-${variant}`
     )}

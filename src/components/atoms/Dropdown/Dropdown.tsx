@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import cx from "classnames";
-import { ActionBlock, DropdownModal, TitleBlock, Card } from "components";
+import {
+  ActionBlock,
+  DropdownModal,
+  TitleBlock,
+  Card,
+  Image,
+  FlexBox,
+} from "components";
 import "./styles.scss";
 import { DropdownProps } from "./types";
+import RightArrowImg from "assets/icons/down-arrow.png";
 const Dropdown: React.FC<DropdownProps> = ({
   className,
   defaultValue = "",
@@ -34,9 +42,12 @@ const Dropdown: React.FC<DropdownProps> = ({
           "border-bottom pd-10 fs-16 font-medium"
         )}
       >
-        <p className="text-center curs-point">
-          {dropdownSelection || `Select ${title}`}
-        </p>
+        <FlexBox justifyBetween alignCenter>
+          <p className="text-center curs-point">
+            {dropdownSelection || `Select ${title}`}
+          </p>
+          <Image src={RightArrowImg} className="drop-down-arrow" />
+        </FlexBox>
       </Card>
       <DropdownModal
         visible={dropdownModalVisibility}

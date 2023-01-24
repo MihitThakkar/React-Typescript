@@ -4,7 +4,7 @@ import BackButtonDark from "assets/icons/back-dark.svg";
 import BackButtonLight from "assets/icons/back-light.svg";
 import HamBurgerMenuImg from "assets/icons/hamburger.svg";
 import CrossImg from "assets/icons/cross.svg";
-import Logo from "assets/logo.svg";
+import Logo from "assets/logo.png";
 //Libraries
 import cx from "classnames";
 //Components
@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({
               alt="img"
               loading="lazy"
               src={Logo}
-              className={cx("w-30 logo-img")}
+              className={cx("logo-img")}
             />
           )}
           {hasSideMenu && (

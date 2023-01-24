@@ -5,7 +5,6 @@ import "./styles.scss";
 import { AlertBoxProps } from "./types";
 //Assets
 import YellowExclamationImg from "assets/icons/yellow-exclamation.svg";
-import GreenExclamationImg from "assets/icons/green-exclamation.svg";
 import FailedImg from "assets/icons/failed.svg";
 const AlertBox: React.FC<AlertBoxProps> = ({
   className,
@@ -26,13 +25,7 @@ const AlertBox: React.FC<AlertBoxProps> = ({
       alignCenter
     >
       <Image
-        src={
-          status === "FAILED"
-            ? FailedImg
-            : status === "GREEN"
-            ? GreenExclamationImg
-            : YellowExclamationImg
-        }
+        src={status === "FAILED" ? FailedImg : YellowExclamationImg}
         className={cx("status-icon mr-r-10")}
       />
       <div className="font-medium">{message}</div>

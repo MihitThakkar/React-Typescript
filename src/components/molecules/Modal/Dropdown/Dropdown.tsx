@@ -11,7 +11,7 @@ import React from "react";
 import "./styles.scss";
 import { DropdownModalProps } from "./types";
 //Assets
-import YellowSuccessImg from "assets/icons/blue-success.svg";
+import ThemeSuccessImg from "assets/icons/theme-success.svg";
 const DropdownModal: React.FC<DropdownModalProps> = ({
   visible,
   onClose,
@@ -50,10 +50,12 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
             >
               {item}
             </p>
-            {selected === item ||
-              (selected === stringList?.[index] && (
-                <Image src={YellowSuccessImg} className="w-7 animated zoomIn" />
-              ))}
+            {(selected === item || selected === stringList?.[index]) && (
+              <Image
+                src={ThemeSuccessImg}
+                className="tick-img animated zoomIn"
+              />
+            )}
           </FlexBox>
         ))}
       </div>

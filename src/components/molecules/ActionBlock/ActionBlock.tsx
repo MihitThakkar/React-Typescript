@@ -1,4 +1,3 @@
-import RightArrowImg from "assets/icons/right-arrow.svg";
 import cx from "classnames";
 import { Card, FlexBox, Image } from "components";
 import React from "react";

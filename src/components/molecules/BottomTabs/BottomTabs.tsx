@@ -1,6 +1,4 @@
-import HomeImg from "assets/card.svg";
-import ProfileImg from "assets/icons/menu.svg";
-import QrScan1Img from "assets/qr-scan.png";
+import MenuImg from "assets/icons/menu.svg";
 import TabsBackgroundBlackImg from "assets/bottom-tab-bg.png";
 import cx from "classnames";
 import { FlexBox } from "components";
@@ -35,7 +33,7 @@ const BottomTabs: React.FC<BottomTabsProps> = ({
         <img
           alt="img"
           loading="lazy"
-          src={HomeImg}
+          src={MenuImg}
           className="bottom-tabs-img clicking-animation"
         />
       </FlexBox>
@@ -50,7 +48,7 @@ const BottomTabs: React.FC<BottomTabsProps> = ({
         <img
           alt="img"
           loading="lazy"
-          src={QrScan1Img}
+          src={MenuImg}
           className="clicking-animation w-45"
         />
       </FlexBox>
@@ -68,7 +66,7 @@ const BottomTabs: React.FC<BottomTabsProps> = ({
         <img
           alt="img"
           loading="lazy"
-          src={ProfileImg}
+          src={MenuImg}
           className="bottom-tabs-img clicking-animation"
         />
       </FlexBox>
