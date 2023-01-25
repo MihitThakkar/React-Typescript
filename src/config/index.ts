@@ -8,22 +8,22 @@ const projectName = "React-Typescript";
 const config: any = {
   env: process.env.NODE_ENV || "uat",
   STAGE: {
-    mock: "https://demo6198732.mockable.io/",
+    mock: "http://demo5074490.mockable.io/",
     versionNumber: versionNumber,
     projectName: projectName,
   },
   QA: {
-    mock: "https://demo6198732.mockable.io/",
+    mock: "http://demo5074490.mockable.io/",
     versionNumber: versionNumber,
     projectName: projectName,
   },
   DEV: {
-    mock: "https://demo6198732.mockable.io/",
+    mock: "http://demo5074490.mockable.io/",
     versionNumber: versionNumber,
     projectName: projectName,
   },
   PROD: {
-    mock: "https://demo6198732.mockable.io/",
+    mock: "http://demo5074490.mockable.io/",
     versionNumber: versionNumber,
     projectName: projectName,
   },

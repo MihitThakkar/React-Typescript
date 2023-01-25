@@ -1,6 +1,6 @@
 import { getProductEnv } from "utils";
 
-const GLOBAL_CONSTANT: any = {
+const GLOBAL_CONSTANT = {
   API_STATUS: {
     SUCCESS: 1,
     LOADING: 0,

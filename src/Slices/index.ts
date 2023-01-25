@@ -8,5 +8,4 @@ export {
   baseApiDetailsSlice,
   useBaseApiDetails,
   fetchBaseApiDetailsApi,
-  setBaseApiDetails,
 } from "./baseApi";

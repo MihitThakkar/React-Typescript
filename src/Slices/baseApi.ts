@@ -6,6 +6,8 @@ import { fetchBaseApiDetails } from "Services";
 import { IAPI_ACTION, IDispatcherType, INITIAL_STATE } from "types";
 import store from "store";
 
+const sliceName = "baseApiDetails";
+
 export const setAPIError = (
   state: ReturnType<typeof INITIAL_STATE>,
   action: IAPI_ACTION
@@ -15,25 +17,16 @@ export const setAPIError = (
   toast.error(state.error);
 };
 
-export const baseApiDetails = createAsyncThunk(
-  "baseApiDetails",
-  fetchBaseApiDetails
-);
+export const baseApiDetails = createAsyncThunk(sliceName, fetchBaseApiDetails);
 
 export const baseApiDetailsSlice = createSlice({
-  name: "baseApiDetails",
+  name: sliceName,
   initialState: INITIAL_STATE(),
   reducers: {
     CLEAR_ERROR: (state: any) => {
       state.error = "";
     },
     RESET: (state) => Object.assign(state, INITIAL_STATE()),
-    setBaseApiDetails: (
-      state = INITIAL_STATE(),
-      action: PayloadAction<any>
-    ) => {
-      return { ...action.payload };
-    },
   },
   extraReducers: {
     [baseApiDetails.pending.toString()]: (
@@ -60,13 +53,9 @@ export const baseApiDetailsSelector = (state: any) => {
 
 export const useBaseApiDetails = (): any => useSelector(baseApiDetailsSelector);
 
-export const fetchBaseApiDetailsApi = (method: string) => async (
-  dispatch: IDispatcherType
-): Promise<void> => {
-  await dispatch(baseApiDetails(method));
-  return;
-};
-
-export const setBaseApiDetails = (action: any): void => {
-  store.dispatch(baseApiDetailsSlice.actions.setBaseApiDetails(action));
-};
+export const fetchBaseApiDetailsApi =
+  (method: string) =>
+  async (dispatch: IDispatcherType): Promise<void> => {
+    await dispatch(baseApiDetails(method));
+    return;
+  };

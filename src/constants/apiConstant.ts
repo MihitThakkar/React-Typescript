@@ -1,4 +1,3 @@
-import { setBaseApiDetails } from "Slices";
 const API_CONSTANT = {
   URL: {
     MOCK: "mock",
